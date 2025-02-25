@@ -1,4 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// more info  and lesson material:   https://stasemsoft.github.io/FontysICT-sem1/
+// of which the basics are explained in the following link:
+// https://stasemsoft.github.io/FontysICT-sem1/docs/basic/
+// and more advanced topics are explained in the following link:
+// https://stasemsoft.github.io/FontysICT-sem1/docs/objects/
+
+
+// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
 // Simple counting program
@@ -15,4 +22,31 @@ for (int i = 1; i <= 5; i++)
 
 Console.WriteLine("Counting finished!");
 Console.WriteLine("Press the any key to exit...");
+Console.ReadKey();
+
+// Programming Basics Workshop
+Console.WriteLine("Programming Basics Workshop!");
+
+// Example of variables and types
+int age = 18;
+string message = "Welcome to programming!";
+Console.WriteLine(message);
+
+// If statement without else
+if (age >= 18)
+{
+    Console.WriteLine("You are an adult");
+}
+
+// If-else statement
+if (age < 21)
+{
+    Console.WriteLine("You cannot drink in the US");
+}
+else
+{
+    Console.WriteLine("You can drink in the US");
+}
+
+Console.WriteLine("\nPress any key to exit...");
 Console.ReadKey();
