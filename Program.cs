@@ -19,3 +19,12 @@ for (int i = 1; i <= 5; i++)
 Console.WriteLine("Counting finished!");
 Console.WriteLine("Press the any key to exit...");
 Console.ReadKey();
+
+// While loop counting from 0 to 9
+Console.WriteLine("\nNow counting with while loop:");
+int count = 0;
+while (count < 10)
+{
+    Console.WriteLine($"Number: {count}");
+    count = count + 1;
+}
