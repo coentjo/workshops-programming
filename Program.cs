@@ -62,3 +62,13 @@ while (counter < 10)
 
 Console.WriteLine("\nPress any key to exit...");
 Console.ReadKey();
+
+// For loop counting 0-9
+Console.WriteLine("\nCounting with for loop:");
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i);
+}
+
+Console.WriteLine("\nPress any key to exit...");
+Console.ReadKey();
