@@ -20,18 +20,18 @@ Console.WriteLine("Counting finished!");
 Console.WriteLine("Press the any key to exit...");
 Console.ReadKey();
 
-// While loop counting from 0 to 9
-Console.WriteLine("\nNow counting with while loop:");
+// While loop counting from 0 to 9 and showing multiplication table of 27
+Console.WriteLine("\nMultiplication table of 27 using while loop:");
 int count = 0;
 while (count < 10)
 {
-    Console.WriteLine($"Number: {count}");
+    Console.WriteLine($"{count} x 27 = {count * 27}");
     count = count + 1;
 }
 
 // For loop doing the same thing
-Console.WriteLine("\nNow counting with for loop:");
+Console.WriteLine("\nMultiplication table of 27 using for loop:");
 for (int k = 0; k < 10; k = k + 1)
 {
-    Console.WriteLine($"Number: {k}");
+    Console.WriteLine($"{k} x 27 = {k * 27}");
 }
