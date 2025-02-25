@@ -28,3 +28,10 @@ while (count < 10)
     Console.WriteLine($"Number: {count}");
     count = count + 1;
 }
+
+// For loop doing the same thing
+Console.WriteLine("\nNow counting with for loop:");
+for (int k = 0; k < 10; k = k + 1)
+{
+    Console.WriteLine($"Number: {k}");
+}
