@@ -27,29 +27,36 @@ Console.ReadKey();
 // Programming Basics Workshop
 Console.WriteLine("Programming Basics Workshop!");
 
-// Example of variables and types
-int age = 18;
-string message = "Welcome to programming!";
-Console.WriteLine(message);
-
-// If statement without else
-if (age >= 18)
-{
-    Console.WriteLine("You are an adult");
-}
-
-// If-else statement
-if (age < 21)
-{
-    Console.WriteLine("You cannot drink in the US");
-}
-else
-{
-    Console.WriteLine("You can drink in the US");
-}
+// Call our first method
+ShowBasicExamples();
 
 Console.WriteLine("\nPress any key to exit...");
 Console.ReadKey();
+
+// Method without parameters and return value (void)
+void ShowBasicExamples()
+{
+    // Example of variables and types
+    int age = 18;
+    string message = "Welcome to programming!";
+    Console.WriteLine(message);
+
+    // If statement without else
+    if (age >= 18)
+    {
+        Console.WriteLine("You are an adult");
+    }
+
+    // If-else statement
+    if (age < 21)
+    {
+        Console.WriteLine("You cannot drink in the US");
+    }
+    else
+    {
+        Console.WriteLine("You can drink in the US");
+    }
+}
 
 // While loop counting 0-9
 Console.WriteLine("\nCounting with while loop:");
