@@ -49,6 +49,12 @@ static int MultiplyBy27(int number)
     return number * 27;
 }
 
+// 3. A more flexible method that can multiply by any number
+static int Multiply(int number, int multiplier)
+{
+    return number * multiplier;
+}
+
 // Testing our methods:
 Console.WriteLine("\nTesting methods:");
 Console.WriteLine("Let's calculate some squares:");
@@ -62,3 +68,26 @@ for (int n = 0; n < 10; n = n + 1)
 {
     Console.WriteLine($"{n} x 27 = {MultiplyBy27(n)}");
 }
+
+// Testing our flexible multiplication method:
+Console.WriteLine("\nTesting flexible multiplication method:");
+// First with 7
+Console.WriteLine("Table of 7:");
+for (int n = 0; n < 10; n = n + 1)
+{
+    Console.WriteLine($"{n} x 7 = {Multiply(n, 7)}");
+}
+
+// Then with 12
+Console.WriteLine("\nTable of 12:");
+for (int n = 0; n < 10; n = n + 1)
+{
+    Console.WriteLine($"{n} x 12 = {Multiply(n, 12)}");
+}
+
+// Compare with our earlier method:
+Console.WriteLine("\nComparing methods:");
+int testNumber = 5;
+Console.WriteLine($"Using MultiplyBy27: {testNumber} x 27 = {MultiplyBy27(testNumber)}");
+Console.WriteLine($"Using Multiply:     {testNumber} x 27 = {Multiply(testNumber, 27)}");
+// Both give the same result, but Multiply is more flexible!
