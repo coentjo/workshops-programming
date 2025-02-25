@@ -35,3 +35,30 @@ for (int k = 0; k < 10; k = k + 1)
 {
     Console.WriteLine($"{k} x 27 = {k * 27}");
 }
+
+// Introduction to Methods:
+// 1. A simple method that calculates the square of a number
+static int Square(int number)
+{
+    return number * number;
+}
+
+// 2. A method that returns a multiplication for the table
+static int MultiplyBy27(int number)
+{
+    return number * 27;
+}
+
+// Testing our methods:
+Console.WriteLine("\nTesting methods:");
+Console.WriteLine("Let's calculate some squares:");
+for (int n = 1; n <= 5; n = n + 1)
+{
+    Console.WriteLine($"The square of {n} is: {Square(n)}");
+}
+
+Console.WriteLine("\nNow using our multiplication method:");
+for (int n = 0; n < 10; n = n + 1)
+{
+    Console.WriteLine($"{n} x 27 = {MultiplyBy27(n)}");
+}
