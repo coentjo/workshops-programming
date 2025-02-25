@@ -1,4 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Here you can find info about the basics of programming
+// @https://stasemsoft.github.io/FontysICT-sem1/docs/basic/
+
+// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
 // Simple counting program
