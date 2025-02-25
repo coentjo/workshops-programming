@@ -50,3 +50,15 @@ else
 
 Console.WriteLine("\nPress any key to exit...");
 Console.ReadKey();
+
+// While loop counting 0-9
+Console.WriteLine("\nCounting with while loop:");
+int counter = 0;
+while (counter < 10)
+{
+    Console.WriteLine(counter);
+    counter++;
+}
+
+Console.WriteLine("\nPress any key to exit...");
+Console.ReadKey();
