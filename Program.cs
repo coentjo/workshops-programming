@@ -72,3 +72,22 @@ for (int i = 0; i < 10; i++)
 
 Console.WriteLine("\nPress any key to exit...");
 Console.ReadKey();
+
+// Multiplication table with while loop
+Console.WriteLine("\nMultiplication table of 7 using while loop:");
+counter = 1;
+while (counter <= 10)
+{
+    Console.WriteLine($"7 x {counter} = {7 * counter}");
+    counter++;
+}
+
+// Multiplication table with for loop
+Console.WriteLine("\nMultiplication table of 7 using for loop:");
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine($"7 x {i} = {7 * i}");
+}
+
+Console.WriteLine("\nPress any key to exit...");
+Console.ReadKey();
