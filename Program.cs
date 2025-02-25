@@ -91,3 +91,23 @@ int testNumber = 5;
 Console.WriteLine($"Using MultiplyBy27: {testNumber} x 27 = {MultiplyBy27(testNumber)}");
 Console.WriteLine($"Using Multiply:     {testNumber} x 27 = {Multiply(testNumber, 27)}");
 // Both give the same result, but Multiply is more flexible!
+
+// 4. A method that prints an entire multiplication table
+static void PrintMultiplicationTable(int tableNumber)
+{
+    Console.WriteLine($"\nMultiplication table of {tableNumber}:");
+    for (int n = 0; n < 10; n = n + 1)
+    {
+        // We reuse our Multiply method here!
+        Console.WriteLine($"{n} x {tableNumber} = {Multiply(n, tableNumber)}");
+    }
+}
+
+// Testing our table printing method:
+Console.WriteLine("\nTesting our table printing method:");
+PrintMultiplicationTable(6);  // Table of 6
+PrintMultiplicationTable(8);  // Table of 8
+
+// Now we can print any table with just one line of code!
+Console.WriteLine("\nIsn't this much cleaner than writing the loop every time?");
+PrintMultiplicationTable(13);
